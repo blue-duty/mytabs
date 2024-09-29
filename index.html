@@ -7,7 +7,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-                        font-size: 15px;
+            font-size: 15px;
             background-color: black;
         }
 
@@ -36,6 +36,13 @@
 
         a:hover {
             text-decoration: underline;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* 在移动端变为单列布局 */
+            }
         }
     </style>
 </head>
